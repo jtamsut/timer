@@ -1,0 +1,14 @@
+.container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 72px;
+    font-family: 'Courier New', Courier, monospace;
+}
