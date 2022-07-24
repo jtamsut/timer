@@ -1,5 +1,5 @@
 const timer = document.getElementById("time");
-let time = 2;
+let time = 25 * 60;
 
 function decrementTime() {
     let minutes = parseInt(time / 60, 10)
