@@ -1,5 +1,5 @@
 const timer = document.getElementById("time");
-let time = 25 * 60;
+let time = 2;
 
 function decrementTime() {
     let minutes = parseInt(time / 60, 10)
@@ -11,10 +11,14 @@ function decrementTime() {
     timer.innerText = `${minutes}:${seconds}`;
 
     time -= 1;
-
-    if (time < 0) {
-        clearInterval()
-    }
 }
 
-setInterval(decrementTime, 1000);
+const intervalID =setInterval(() => {
+    decrementTime();
+
+    if (time < 0) {
+        clearInterval(intervalID);
+        document.getElementById("status").innerText = "Time is up!"
+    }
+
+}, 1000);

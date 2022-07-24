@@ -12,3 +12,7 @@ h1 {
     font-size: 72px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+#status {
+    color: red;
+}
