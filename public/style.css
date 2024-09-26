@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #6c63ff;
+    color: #fff;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Timer Display */
+.timer {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.timer span {
+    display: inline-block;
+    min-width: 60px;
+}
+
+/* Buttons */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#startStopBtn {
+    background-color: #ff6584;
+    color: #fff;
+}
+
+#startStopBtn:hover {
+    background-color: #ff3366;
+}
+
+#resetBtn {
+    background-color: #ffffff;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+}
+
+#resetBtn:hover {
+    background-color: #f0f0f0;
+}
+
+/* History Section */
+.history {
+    padding: 40px 20px;
+}
+
+.history h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historyList li {
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .timer {
+        font-size: 48px;
+    }
+
+    button {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #historyList li {
+        width: 100%;
+    }
+}
